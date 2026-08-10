@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color:rgba(80, 85, 89, 0.8);
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('flat-lay-school-essentials-with-calculator-stapler.jpg') ;
+    background-size: 100%;
+   
+}
+
+h2 {
+            font-size: 50px;
+            font-family: inherit;
+            font-weight: 500;
+            font-style: normal;
+            text-shadow: 3px 3px 4px rgba(66, 65, 65, 0.8);
+            text-align: center;
+            color: rgba(232, 199, 65, 0.786);
+            border-radius: 400px;
+            /* margin-left: -px; */
+            /* padding-top:10px; */
+            letter-spacing: 3px;
+
+
+}
+
+
+
+.content {
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    backdrop-filter: blur(9px);
+    border-radius: 10px;
+   
+}
+
+form {
+  text-align: center;
+  
+}
+
+
+
+input {
+    width: 300px;
+    height: 30px;
+   margin-top: 20px;
+   padding-right: 20px;
+   padding-left: 0;
+   font-family: inherit;
+   font-size: 30px;
+   font-weight: 20;
+   text-align: center;
+   color: rgb(255, 253, 253);
+   background: transparent;
+   border-radius: 5px;
+   border: 1px solid rgb(255, 253, 253);
+   backdrop-filter: blur(0px);
+   /* box-shadow: 1px 1px  5px  ; */
+
+}
+
+
+input::placeholder {
+    color: rgb(255, 252, 252);
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: inherit;
+    opacity: 1;
+    
+}
+
+
+form button {
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 254, 254);
+    background: transparent;
+    backdrop-filter: blur(3px);
+    /* box-shadow: 2px 5px 10px black; */
+    font-size: 15px ;
+    font-weight: 300;
+    letter-spacing: 1px;
+  
+}
+
+form button:hover {
+     transform: scale(1.1);
+     transition: 0.2s ease-in-out;
+     border-radius: 5px;
+     border: 1px solid green;
+     /* box-shadow: 2px 5px 10px black; */
+     color:rgb(255, 255, 251);
+}
+
+.home-btn {
+    position: relative;
+    left: 10px;
+   
+}
+
+
+.home-btn a {
+    text-decoration: none;
+     font-size: 15px ;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 253);
+    
+}
+
+
+
+ @keyframes shake {
+              0% { transform: translateX(0); }
+             20% { transform: translateX(-4px) rotate(-5deg); }
+             40% { transform: translateX(4px) rotate(5deg); }
+             60% { transform: translateX(-4px) rotate(-3deg); }
+             80% { transform: translateX(4px) rotate(3deg); }
+             100% { transform: translateX(0); }
+         }
+
