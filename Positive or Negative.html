@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem2</title>
+
+    <link rel="stylesheet" href="validator.css">
+
+    
+        <style>
+
+ #p {
+         color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+        display: inline-block;
+        transition: 0.2s ease;
+
+}
+
+#p:hover {
+     color:  rgb(87, 2555, 3);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+}
+
+#o {
+      color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+        display: inline-block;
+     transition: 0.2s ease;
+}
+
+#o:hover {
+     color:  rgba(87, 255, 3, 0.998);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+
+#s{ 
+     color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#s:hover {
+     color:  rgb(87, 255, 3);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#ps{
+     color: rgba(220, 227, 219, 0.996);
+     display: inline-block;
+     transition: 0.2s ease;
+
+}
+
+#ps:hover {
+     color:  rgb(87, 255, 3);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+
+}
+
+#r{
+     color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#r:hover {
+    color:  rgb(255, 0, 0);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+#n{
+     color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#n:hover {
+    color:  rgb(255, 0, 0);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#e{
+     color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#e:hover {
+    color:  rgb(255, 0, 0);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#g{
+      color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#g:hover {
+    color:  rgb(255, 39, 39);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#ng{
+     color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+    }
+
+
+#ng:hover {
+    color:  rgb(255, 0, 0);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+.out2 {
+     width: 300px;
+     font-size: 20px;
+}
+
+    
+    </style>
+    
+
+</head>
+<body>
+
+    <div>
+        <h2> <span id="p">P</span><span id="o">o</span><span id="s">s</span><span id="ps"><sup>+</sup></span> <span id="o">o</span><span id="r">R</span> <span id="n">N</span><span id="e">e</span></span><span id="g">g</span><span id="ng"><sup>-</sup></span><img class="rbt" src="toppng.com-free-png-robot-png-images-transparent-robot-transparent-background-850x762.png"  height="70px" width="70px"> </h2>
+
+    </div>
+
+    <div class="content">
+        <form action="" name="sign">
+
+            
+            <input type="text" id="input2" placeholder="Enter a Number"> <br>
+            <button type="button" onclick="checksign()">Check</button> <button class="home-btn"><a href="index.html">Home</a></button>
+            <br>
+          <input class="out2" type="text" name=""  id="output2" readonly>
+        </form>
+
+        <script>
+          
+          
+          
+          function checksign() {
+
+               let a = document.sign.input2.value;
+
+               if (a.trim()=="") {
+                    output2.value = "Enter a Number";
+               }
+               else if (a<0) {
+                    output2.value = "Negative";
+               }
+               else if (isNaN(a)) {
+                    output2.value = "Enter Number only";
+               }
+               
+               else if (a==0) {
+                    output2.value = "Neither positive nor negative"
+               }
+
+               else {
+                    output2.value = "Positive"
+               }
+          }
+          
+
+        </script>
+
+
+       
+    </div>
+
+
+
+    
+</body>
+</html>

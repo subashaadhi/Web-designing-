@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem1</title>
+
+    <link rel="stylesheet" href="validator.css">
+
+
+    <style>
+
+ #o {
+        
+        display: inline-block;
+        color:white;
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+        transition: 0.2s ease;
+
+}
+
+#o:hover {
+     color:  rgb(0, 200, 255);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+}
+
+#d {
+     color: white;
+     display: inline-block;
+    
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     transition: 0.2s ease;
+}
+
+#d:hover {
+     color:  rgba(244, 8, 8, 0.998);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+
+#r{ 
+     color:white;
+     display: inline-block;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+    
+     transition: 0.2s ease;
+}
+
+#r:hover {
+     color:  rgb(255, 242, 2);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#e{
+     color:white;
+     display: inline-block;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+    
+     transition: 0.2s ease;
+
+}
+
+#e:hover {
+     color:  rgb(87, 255, 3);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+
+}
+
+#v{
+     color:white;
+    
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#v:hover {
+    color:  rgb(255, 0, 247);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+#n{
+     color:white;
+    
+     display: inline-block;
+     transition: 0.2s ease;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+}
+
+#n:hover {
+    color:  rgb(255, 129, 39);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+.output {
+     display: inline-block;
+     width: 230px;
+     font-size: 20px;
+}
+
+
+    </style>
+    
+
+</head>
+<body>
+
+    <div>
+        <h2> <span id="o">O</span><span id="d">d</span><span id="d">d</span> <span id="o">o</span><span id="r">R</span> <span id="e">E</span><span id="v">v</span><span id="e">e</span></span><span id="n">N</span><img src="toppng.com-free-png-robot-png-images-transparent-robot-transparent-background-850x762.png" class="rbt" height="70px" width="70px">  </h2> 
+         
+    </div>
+
+    
+
+    <div class="content">
+     
+     <div>
+          <form action="" name="oddeven">
+
+            
+            <input type="text" id="input1" placeholder="Enter a Number"> <br>
+            <button type="button" onclick="checkOddeven()">Check</button> 
+            <a href="http://127.0.0.1:5500/html%20css%20mini%20projects/Validator/index.html"><button class="home-btn">Home</button></a>
+            <!-- <a href="http://127.0.0.1:5500/html%20css%20mini%20projects/Validator/index.html"><button class="home-btn">Home</button></a> -->
+            <br>
+          <input class="output" type="text" name=""  id="output1" readonly>
+          </form>
+
+     </div>
+
+     <!-- <div class="box"><p id="output1"></p></div> -->
+        
+
+          
+
+     
+    </div>
+
+    <script>
+     
+     function checkOddeven() {
+          
+          let a = document.oddeven.input1.value;
+
+          if (a.trim() == ""){
+               output1.value = "Enter a Number";
+          }
+
+          else if (isNaN(a)){
+               output1.value = "Enter number only"
+          }
+
+          
+          else  {
+
+                a = parseFloat(a);
+
+               if(!Number.isInteger(a))  {
+                    output1.value = "Neither Even nor Odd";
+               }
+
+                else if (a%2==0 || a == 0) {
+                 // document.getElementById("output1").innerHTML="The Result: Even";
+                output1.value = "Even";
+                }
+
+                 else {
+                 // document.getElementById("output1").innerHTML="The Result: Odd";
+                  output1.value= "Odd";
+            }
+    
+          } }
+    
+    </script>
+
+
+    
+</body>
+</html>

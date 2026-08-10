@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem3</title>
+
+    <link rel="stylesheet" href="validator.css">
+
+<style>
+
+ #p {
+        color:white;
+         text-shadow: 5px 5px 1px rgb( 0,0,0);
+        text-shadow: 5px 5px 1px rgb( 0,0,0);
+        display: inline-block; 
+        transition: 0.2s ease;
+
+}
+
+#p:hover {
+     color:  rgb(0, 200, 255);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+}
+
+#a {
+     color:  white;
+      text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block ;
+     transition: 0.2s ease;
+}
+
+#a:hover {
+     color:  rgba(244, 8, 8, 0.998);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+
+#l{ 
+    color:white;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block ;
+     transition: 0.2s ease;
+}
+
+#l:hover {
+     color:  rgb(255, 242, 2);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#i{
+    color:white;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block ;
+     transition: 0.2s ease;
+
+}
+
+#i:hover {
+     color:  rgb(87, 255, 3);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+
+}
+
+#d{
+    color:white ;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#d:hover {
+    color:  rgb(255, 0, 247);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+#n{
+    color:white ;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#n:hover {
+    color:  rgb(255, 129, 39);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#r{
+    color:white ;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#r:hover {
+    color:  rgb(255, 129, 39);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#o{
+    color:white ;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#o:hover {
+    color:  rgb(251, 255, 2);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#m{
+    color:white ;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#m:hover {
+    color:  rgb(85, 251, 226);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+#e{
+    color:white ;
+     text-shadow: 5px 5px 1px rgb( 0,0,0);
+     /* transform: scaleX(-1); */
+     display: inline-block;
+     transition: 0.2s ease;
+}
+
+#e:hover {
+    color:  rgb(103, 255, 82);
+     transform: scaleX(-1);
+     animation: shake 0.4s ease-in-out ;
+     animation-iteration-count:  1.5;
+
+}
+
+
+
+
+
+    </style>
+    
+
+</head>
+<body>
+
+    <div>
+        <h2> <span id="p">P</span><span id="a">a</span><span id="l">l</span><span id="i">i</span><span id="n">n</span><span id="d">d</span><span id="r">r</span><span id="o">o</span></span><span id="m">m</span><span id="e">E</span><img class="rbt" src="toppng.com-free-png-robot-png-images-transparent-robot-transparent-background-850x762.png"  height="70px" width="70px"> </h2>
+
+    </div>
+
+    <div class="content" >
+        <form action="" name="palindrome">
+
+            
+            <input type="text" id="input1" placeholder="Enter a Number"> <br>
+            <button type="button" onclick="palindrome()">Check</button> <button class="home-btn"><a href="/index.html">Home</a></button><br>
+          <input type="text" name=""  id="output1" readonly>
+        </form>
+
+        <script>
+          function palindrome () {
+
+               let inputval = document.getElementById("input1").value;
+               let a = parseInt(inputval) ;
+	          let b = 0;
+		     let t = a;
+		
+		     while (t > 0 ) { l
+			
+			let  d = t%10;
+			   b = b*10+d;
+			    t = Math.floor(t/10);
+		     }
+
+			if ( b == a ) {
+				document.getElementById("output1").value = a + " is a palindrome";
+			}
+			
+			else {
+				document.getElementById("output1").value = a + "  is not a palindrome";
+                 }
+               }
+        </script>
+
+
+       
+    </div>
+
+
+
+    
+</body>
+</html>
